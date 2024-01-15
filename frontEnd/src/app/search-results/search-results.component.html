@@ -1,0 +1,15 @@
+<div>
+  <div class="container">
+    <div class="row row-cols-1 row-cols-lg-2 row-cols-xl-4">
+  <div *ngFor="let item of searchData">
+    <app-invitefriend [FirstName]="item.firstName" [LastName]="item.lastName"
+    [Email]="item.email"  rootClassName="invitefriend-root-class-name"
+   ></app-invitefriend>
+  </div>
+  </div>
+  </div>
+
+<ng-template #noResultsFound>
+  <p>No Results Found</p>
+</ng-template>
+</div>

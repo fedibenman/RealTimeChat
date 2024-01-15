@@ -1,0 +1,44 @@
+<!--<div class="container" *ngIf="currentUser; else loggedOut">
+  <header class="jumbotron">
+    <h3>
+      <strong>{{ currentUser.username }}</strong> Profile
+    </h3>
+  </header>
+  <p>
+    <strong>Email:</strong>
+    {{ currentUser.email }}
+  </p>
+  <strong>Roles:</strong>
+  <ul>
+    <li *ngFor="let role of currentUser.roles">
+      {{ role }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #loggedOut>
+  Please login.
+</ng-template>
+-->
+
+
+<div class="container">
+  <div class="profile-header">
+    <img class="profile-image" src="../../assets/img/235036181_369437834875482_5177931029545965894_n.jpg" alt="Profile Image">
+    <div class="profile-details">
+      <h2 class="profile-name"><strong>{{ currentUser.username }}</strong></h2>
+    </div>
+  </div>
+  <div class="profile-contact">
+    <dl>
+      <div>
+        <dt>Email address</dt>
+        <dd>{{ currentUser.email }}</dd>
+      </div>
+    </dl>
+  </div>
+  <div class="profile-actions">
+    <a class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2" href="/Dashboard">Dashboard</a>
+    <a class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2" href="/Settings">Settings</a>
+  </div>
+</div>

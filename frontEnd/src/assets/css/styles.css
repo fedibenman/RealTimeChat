@@ -1,0 +1,76 @@
+#headerBodyContainer {
+  background: url("../../assets/img/download.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.row {
+}
+
+#rows {
+  justify-content: center;
+}
+
+#LoginForm {
+  margin-top: 50px;
+}
+
+#CardMessage {
+   position: fixed;
+    width: 80%;
+    background-color: #f8f4f4;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#cardMessagesBody {
+  max-height: 450px;
+  overflow-y: auto;
+}
+
+
+li {
+  color: antiquewhite;
+}
+ a:hover {
+  color:whitesmoke;
+ }
+
+ /*#textingChat {
+  position: fixed;
+  margin-top: 350px;
+ }*/
+
+ .TopSideBar {
+  display: grid;
+  grid-template-columns: 8px 2px;
+  grid-gap: 160px;
+ }
+
+ .ButtonsChatGroup {
+  padding-right: 10px;
+ }
+
+ #seraching {
+  margin-bottom: 10px;
+  margin-left: 5px;
+  margin-right: 5px;
+ }
+
+ .users {
+  padding: 5px;
+ }
+ .users:hover{
+  background-color: rgb(33, 34, 34);
+ }
+
+ .MessagingGroup {
+  display: grid;
+  grid-template-rows: 2px 2px;
+  grid-gap: 10px;
+ }
+
+ .LastMessage {
+  color: gray;
+ }
+
